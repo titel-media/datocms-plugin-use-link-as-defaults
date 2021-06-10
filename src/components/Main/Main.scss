@@ -1,0 +1,62 @@
+.container {
+  background-color: #fff;
+  display: flex;
+  margin-top: 20px;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .controls {
+    align-items: center;
+    flex: 0 0 auto;
+    justify-content: flex-end;
+  }
+
+  .DatoCMS-button + .DatoCMS-button {
+    margin-left: 4px;
+  }
+
+  .status {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+  }
+
+  .loading {
+    transition: 0.25s ease opacity;
+  }
+
+  .dot {
+    animation: bulletPointBlinkAnimation 1.5s infinite ease-in-out both;
+    border-radius: 100%;
+    display: inline-block;
+    height: 8px;
+    margin: 0 4px;
+    width: 8px;
+  }
+
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .dot:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+
+  .dot:nth-child(3) {
+    animation-delay: 1s;
+  }
+
+  @keyframes bulletPointBlinkAnimation {
+    0% {
+      background-color: #ebebeb;
+    }
+
+    50%,
+    100% {
+      background-color: #2e2e2e;
+    }
+  }
+}
