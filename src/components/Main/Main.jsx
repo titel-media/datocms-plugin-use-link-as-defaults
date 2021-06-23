@@ -231,9 +231,9 @@ const defaultText = {
 export default connectToDatoCms((plugin) => ({
   devMode: plugin.parameters.global.developmentMode,
   text: {
-    clearButton: get(plugin.parameters.global, `textClearButton`, defaultText.clearButton),
-    nothingSet: get(plugin.parameters.global, `textNothingSet`, defaultText.nothingSet),
-    resetButton: get(plugin.parameters.global, `textResetButton`, defaultText.resetButton),
+    clearButton: get(plugin.parameters.global, `textClearButton`) || defaultText.clearButton,
+    nothingSet: get(plugin.parameters.global, `textNothingSet`) || defaultText.nothingSet,
+    resetButton: get(plugin.parameters.global, `textResetButton`) || defaultText.resetButton,
   },
   config: JSON.parse(plugin.parameters.instance.config),
 }))(Main);
