@@ -1,7 +1,7 @@
 {
   "name": "datocms-plugin-use-link-as-defaults",
   "homepage": "https://github.com/titel-media/datocms-plugin-use-link-as-defaults",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This plugin provides the developer with an easy way to configure fields that a CMS user can overwrite manually when linking an entity.",
   "main": "index.js",
   "scripts": {
