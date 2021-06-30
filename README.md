@@ -8,7 +8,7 @@ You can add this field addon only to single link fields.
 
 ## Preview
 
-![Preview](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/preview.gif 'Preview')
+![Preview](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/preview.gif 'Preview')
 
 ## What this plugin can do for you
 
@@ -16,20 +16,20 @@ Let's imagine the following scenario: You have a website where you want to displ
 
 So let's image, an editor wants to feature an article and a product on your frontpage. Let's further assume we have two models defined as follow:
 
-| Article Model                                                                                                                                                       | Product Model                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Model Demo Article](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/model-demo-article.png 'Model of Demo Article') | ![Model Demo Product](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/model-demo-product.png 'Model of Demo Product') |
+| Article Model                                                                                                                                                     | Product Model                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Model Demo Article](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/model-demo-article.png 'Model of Demo Article') | ![Model Demo Product](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/model-demo-product.png 'Model of Demo Product') |
 
 Let's create four instances of these models:
 
-|         | Example 1                                                                                                                                  | Example 2                                                                                                                                  |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Article | ![Article 1](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/demo-article-1.png 'Article 1') | ![Article 2](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/demo-article-2.png 'Article 2') |
-| Product | ![Product 1](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/demo-product-1.png 'Product 1') | ![Product 2](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/demo-product-2.png 'Product 2') |
+|         | Example 1                                                                                                                                | Example 2                                                                                                                                |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Article | ![Article 1](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/demo-article-1.png 'Article 1') | ![Article 2](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/demo-article-2.png 'Article 2') |
+| Product | ![Product 1](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/demo-product-1.png 'Product 1') | ![Product 2](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/demo-product-2.png 'Product 2') |
 
 Now we will configure a custom teaser with these settings:
 
-![Custom Teaser Model](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/custom-teaser-model.png 'Custom Teaser Model')
+![Custom Teaser Model](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/custom-teaser-model.png 'Custom Teaser Model')
 
 Where reference is of type single link and has both demo models selected. Within the edit section of the reference field, we set up the config. Go to presentation tab and select "Insert Addon" and select "Use Link as Defaults". A new field will be added called configuration which expects a valid JSON config.
 
@@ -65,10 +65,10 @@ That's it.
 ## Demo
 
 Use different models as reference and map fields.
-![Demo 1](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/demo1.gif 'Demo 1')
+![Demo 1](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/demo1.gif 'Demo 1')
 
 Overwrite specific fields manually and do not reset them. Empty them for resetting.
-![Demo 2](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/master/docs/demo2.gif 'Demo 2')
+![Demo 2](https://raw.githubusercontent.com/titel-media/datocms-plugin-use-link-as-defaults/main/docs/demo2.gif 'Demo 2')
 
 ## Plugin Configuration
 
