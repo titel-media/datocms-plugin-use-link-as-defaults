@@ -1,11 +1,11 @@
 {
   "name": "datocms-plugin-use-link-as-defaults",
   "homepage": "https://github.com/titel-media/datocms-plugin-use-link-as-defaults",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This plugin provides the developer with an easy way to configure fields that a CMS user can overwrite manually when linking an entity.",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --port 5000",
+    "start": "NODE_ENV=development webpack-dev-server --port 5500",
     "dist": "NODE_ENV=production webpack --progress",
     "addToProject": "yo datocms-plugin:add-to-project",
     "prepublishOnly": "rimraf lib dist && mkdir dist && npm run dist",
