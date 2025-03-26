@@ -1,8 +1,12 @@
-import './Main.scss';
-
-import { ACTIONS, STATES } from '@root/redux/constants';
 import React, { useEffect } from 'react';
 import { arrayOf, bool, shape, string } from 'prop-types';
+import { get, isEmpty } from 'lodash';
+
+import connectToDatoCms from '@root/hoc/connectToDatoCms';
+import { STATES, ACTIONS } from '@root/redux/constants';
+import { fillEmptyFields, initializeSourceAndTarget, clearFields, toggleFieldsVisibilty } from '@root/helpers';
+import { getLoggerMiddleware } from '@root/redux/middleware';
+import { usePrevious, useReducerWithMiddleware } from '@root/hooks';
 import {
   clearAll,
   deselectId,
@@ -13,12 +17,8 @@ import {
   selectId,
   startFillingFields,
 } from '@root/redux/actions';
-import { clearFields, fillEmptyFields, initializeSourceAndTarget, toggleFieldsVisibilty } from '@root/helpers';
-import { get, isEmpty } from 'lodash';
-import { usePrevious, useReducerWithMiddleware } from '@root/hooks';
 
-import connectToDatoCms from '@root/hoc/connectToDatoCms';
-import { getLoggerMiddleware } from '@root/redux/middleware';
+import './Main.scss';
 
 const initialState = {
   client: null,
@@ -59,7 +59,6 @@ const reducer = (state, action) => {
 // eslint-disable-next-line max-lines-per-function
 const Main = ({ config, client, devMode, text, plugin }) => {
   Main.devMode = devMode;
-  console.log({ config });
   const selectedId = plugin.getFieldValue(plugin.fieldPath);
 
   const hasContent = !isEmpty(selectedId);
@@ -155,6 +154,7 @@ const Main = ({ config, client, devMode, text, plugin }) => {
   useEffect(() => {
     if (currentSystemState === STATES.LAUNCH) return;
     if (config.autoHide === false) return;
+
     // will show
     if (!state.loading && state.hasContent) {
       toggleFieldsVisibilty(state, true);
