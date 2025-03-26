@@ -127,6 +127,7 @@ Structure:
 ```
 {
   "fields": ["targetFieldName"]
+  "autoHide": boolean?, // default is true
   "assign": {
     "model1": {
       "targetFieldName": "sourceFieldName1",
@@ -148,6 +149,7 @@ Examples:
     "image",
     "category"
   ],
+  "autoHide": false, // fields are shown without reference
   "assign": {
     "product": {
       "title": "brand.name",
@@ -173,6 +175,7 @@ Examples:
     "image",
     "category"
   ],
+  "autoHide": true,
   "assign": {
     "demo_article_model": { // selected models
       "title": "title", // map source field to target field

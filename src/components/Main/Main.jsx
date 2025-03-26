@@ -153,6 +153,7 @@ const Main = ({ config, client, devMode, text, plugin }) => {
 
   useEffect(() => {
     if (currentSystemState === STATES.LAUNCH) return;
+    if (config.autoHide === false) return;
 
     // will show
     if (!state.loading && state.hasContent) {
@@ -163,7 +164,7 @@ const Main = ({ config, client, devMode, text, plugin }) => {
     if (!state.loading && !state.hasContent) {
       toggleFieldsVisibilty(state, false);
     }
-  }, [state.loading, state.hasContent, currentSystemState, hasContent]);
+  }, [state.loading, state.hasContent, currentSystemState, hasContent, config]);
 
   return (
     <div className="container">
